@@ -1,0 +1,19 @@
+// variables
+$website-width:1040px;
+$main-color:#C42922;
+$light-color:#f4f4f4;
+$meduim-color:#ccc;
+$dark-color:#333;
+$bg-image:url(../dist/img/showcase.jpg);
+$bg-image1:url(../dist/img/photo-1607799131608-9a22dd60e25e.jpeg);
+
+
+// set text color
+
+@function set-text-color($color){
+    @if(lightness($color)>50){
+        @return #000;
+    }@else{
+        @return #fff;
+    }
+}
